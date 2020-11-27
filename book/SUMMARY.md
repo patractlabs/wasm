@@ -5,3 +5,4 @@
 ---
 
 - [WASM Runtime in Pallet Contracts](./runtime.md)
+
