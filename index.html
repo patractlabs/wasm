@@ -170,7 +170,16 @@
                         <h1><a class="header" href="#the-patractlabs-wasm-book" id="the-patractlabs-wasm-book">The PatractLabs WASM Book</a></h1>
 <p>This book tells about the solution of replacing the <code>wasmi</code> in <code>pallet-contrat</code>.</p>
 <h2><a class="header" href="#why" id="why">Why?</a></h2>
-<p>We use <a href="https://github.com/wasm3/wasm3">wasm3</a> to replace the <a href="https://github.com/paritytech/wasmi">wasmi</a> in the <code>pallet-contract</code>, for faster speed.</p>
+<p>We are trying to use <a href="https://github.com/wasm3/wasm3">wasm3</a> to replace <a href="https://github.com/paritytech/wasmi">wasmi</a> in substrate, for the possibility of faster executing speed.</p>
+<h2><a class="header" href="#execution" id="execution">Execution</a></h2>
+<table><thead><tr><th>Project</th><th>Interpreter</th><th>JIT</th><th>AoT</th><th>VM?</th></tr></thead><tbody>
+<tr><td><a href="https://github.com/kanaka/wac">wac</a></td><td>x</td><td></td><td></td><td></td></tr>
+<tr><td><a href="https://github.com/wasm3/wasm3">wasm3</a></td><td>x</td><td></td><td></td><td></td></tr>
+<tr><td><a href="https://github.com/paritytech/wasmi">wasmi</a></td><td>x</td><td></td><td></td><td></td></tr>
+<tr><td><a href="https://github.com/bytecodealliance/wasmtime">wasmtime</a></td><td></td><td>x</td><td></td><td></td></tr>
+<tr><td><a href="https://github.com/wasmerio/wasmer">wasmer</a></td><td></td><td>x</td><td>?</td><td>x</td></tr>
+<tr><td><a href="https://github.com/WAVM/WAVM">wavm</a></td><td>x</td><td>x</td><td>x</td><td>x</td></tr>
+</tbody></table>
 <h2><a class="header" href="#benchmark" id="benchmark">Benchmark</a></h2>
 <blockquote>
 <p>TODO</p>
