@@ -12,5 +12,10 @@ jobs:
     steps:
       - name: Checkout the source code
         uses: actions/checkout@v1
+      - name: Set nightly toolchain
+        uses: actions-rs/toolchain@v1
+        with:
+          target: wasm32-unknown-unknown
+          override: true
       - name: Build
         run: cargo build -vv
