@@ -1,4 +1,6 @@
-#[no_mangle]
-pub fn _start() {
-    panic!("Hello, world!");
+//! Trap wasm
+include!(concat!(env!("OUT_DIR"), "/panic.rs"));
+
+fn main() {
+    println!("{:?}", PANIC_WASM);
 }
