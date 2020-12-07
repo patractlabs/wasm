@@ -1,8 +1,14 @@
 //! WASM Section
+mod code;
 mod custom;
+mod element;
+mod export;
+mod function;
 mod global;
 mod import;
 mod memory;
+mod name;
+mod reloc;
 mod table;
 mod ty;
 
@@ -22,27 +28,27 @@ pub enum Section {
     /// Type Section
     Type(ty::Section),
     /// Import Section
-    Import(Vec<u8>),
+    Import(import::Section),
     /// Function Section
-    Function(Vec<u8>),
+    Function(function::Section),
     /// Table Section
     Table(table::Section),
     /// Memory Section
     Memory(memory::Section),
     /// Global Section
-    Global(Vec<u8>),
+    Global(global::Section),
     /// Export Section
-    Export(Vec<u8>),
+    Export(export::Section),
     /// Entry reference of the module
     Start(u32),
     /// Elements section
-    Element(Vec<u8>),
+    Element(element::Section),
     /// Number of passive data entries
     DataCount(u32),
-    /// Function Section
-    Code(Vec<u8>),
+    /// Code Section
+    Code(code::Section),
     /// Name Section
-    Name(Vec<u8>),
+    Name(name::Section),
     /// Relocation Section
-    Reloc(Vec<u8>),
+    Reloc(reloc::Section),
 }

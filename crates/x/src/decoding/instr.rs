@@ -1,6 +1,9 @@
 //! Instructions
 use super::ty::Block;
-use alloc::prelude::v1::Box;
+use alloc::{prelude::v1::Box, vec::Vec};
+
+/// Init Expr
+pub struct InitExpr(Vec<Instruction>);
 
 /// Br Table Data
 #[allow(missing_docs)]
