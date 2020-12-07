@@ -1,7 +1,7 @@
 [workspace]
 members = [
   "crates/trap",
-  "crates/wasmx",
+  "crates/x",
 ]
 exclude = [
   "crates/panic",
