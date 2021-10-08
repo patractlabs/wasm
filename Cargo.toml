@@ -1,8 +1,7 @@
-[workspace]
-members = [
-  "crates/trap",
-  "crates/x",
-]
-exclude = [
-  "crates/panic",
-]
+[package]
+name = "wasm"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+wasmtime = "0.30.0"

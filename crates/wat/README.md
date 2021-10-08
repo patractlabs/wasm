@@ -1,3 +1,0 @@
-## WAT
-
-`.wat` testing files.

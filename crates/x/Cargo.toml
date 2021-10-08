@@ -1,5 +1,0 @@
-[package]
-name = "wasmx"
-version = "0.0.1"
-authors = ["clearloop <udtrokia@gmail.com>"]
-edition = "2018"
